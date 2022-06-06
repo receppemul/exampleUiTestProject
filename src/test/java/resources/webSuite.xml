@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web Suite" parallel="tests" thread-count="2">
+
+    <test name="Chrome Tests">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.example.test.tests.MainPageTest">
+                <methods>
+                    <include name="checkRedirectionJobsLeverPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
